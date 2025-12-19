@@ -15,6 +15,7 @@ sudo apt-get install -y neofetch
 sudo apt-get install -y ripgrep
 sudo apt-get install -y fd-find
 sudo apt-get install -y xclip 
+sudo apt-get install -y stow
 
 # disabling nerd shit for now
 # sudo apt-get install -y i3
