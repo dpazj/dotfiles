@@ -3,7 +3,7 @@ maximize = true
 confirm-close-surface = false
 
 window-save-state = always
-window-decoration = true 
+window-decoration = none
 window-width=120 
 window-height=35
 
@@ -12,8 +12,4 @@ background-opacity = 0.85
 cursor-style = block
 cursor-style-blink = false
 shell-integration-features = no-cursor
-
-window-decoration=server
-
-gtk-titlebar-hide-when-maximized = true
 
