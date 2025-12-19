@@ -1,0 +1,16 @@
+#!/bin/bash
+
+DOTFILE_PROJECTS=(
+#    "i3" 
+    "zsh" 
+    "tmux" 
+    "ghostty"
+    "nvim" 
+)
+
+for project in "${DOTFILE_PROJECTS[@]}"; do
+    echo "Installing $project configuration..."
+    stow -D "$project"
+    stow -v "$project"
+done
+

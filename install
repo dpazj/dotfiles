@@ -1,0 +1,20 @@
+#!/bin/bash 
+
+# install distro specific packages
+
+if grep -Fq "ubuntu" /etc/os-release; then
+    echo "Got Ubuntu"
+    . ./scripts/ubuntu
+else
+    echo "Unsupported Distro :("
+    exit
+fi
+
+echo "Adding current user to docker group..."
+sudo usermod -aG docker $USER
+
+# install ohmyzsh and plugins
+. ./scripts/ohmyzsh
+
+. ./install_dotfiles
+

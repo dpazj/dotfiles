@@ -1,0 +1,41 @@
+#!/bin/bash
+
+sudo apt-get update && sudo apt-get install -y
+
+# generic shite
+
+sudo apt-get install -y curl gpg ca-certificates apt-transport-https \ 
+  gcc g++ make cmake wget build-essential autoconf autogen
+
+sudo apt-get install -y snap 
+sudo apt-get install -y tmux 
+sudo apt-get install -y zsh
+sudo apt-get install -y flameshot 
+sudo apt-get install -y neofetch
+sudo apt-get install -y ripgrep
+sudo apt-get install -y fd-find
+sudo apt-get install -y xclip 
+
+# disabling nerd shit for now
+# sudo apt-get install -y i3
+# sudo apt-get install -y picom # enable transparency in i3
+# sudo apt-get install -y feh #background picker for i3
+
+sudo snap install neovim --classic
+sudo snap install spotify 
+sudo snap install ghostty --classic
+
+# docker
+
+sudo install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+
+echo \
+  "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+sudo apt-get update
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
