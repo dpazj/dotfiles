@@ -13,6 +13,10 @@ fi
 echo "Adding current user to docker group..."
 sudo usermod -aG docker $USER
 
+# for brightnessctl
+echo "Adding current user to video group..."
+sudo usermod -aG video $USER
+
 # install ohmyzsh and plugins
 . ./scripts/ohmyzsh
 

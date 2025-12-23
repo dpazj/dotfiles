@@ -1,7 +1,8 @@
 #!/bin/bash
 
 DOTFILE_PROJECTS=(
-#    "i3" 
+    "i3" 
+    "polybar"
     "zsh" 
     "tmux" 
     "ghostty"

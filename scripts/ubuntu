@@ -7,20 +7,31 @@ sudo apt-get update && sudo apt-get install -y
 sudo apt-get install -y curl gpg ca-certificates apt-transport-https \ 
   gcc g++ make cmake wget build-essential autoconf autogen
 
-sudo apt-get install -y snap 
-sudo apt-get install -y tmux 
-sudo apt-get install -y zsh
-sudo apt-get install -y flameshot 
-sudo apt-get install -y neofetch
-sudo apt-get install -y ripgrep
-sudo apt-get install -y fd-find
-sudo apt-get install -y xclip 
-sudo apt-get install -y stow
 
-# disabling nerd shit for now
-# sudo apt-get install -y i3
-# sudo apt-get install -y picom # enable transparency in i3
-# sudo apt-get install -y feh #background picker for i3
+packages=(
+    snap
+    stow
+    tmux
+    zsh
+    flameshot
+    neofetch
+    ripgrep
+    fd-find
+    xclip
+    i3
+    picom             # enable transparency in i3
+    feh               # background picker for i3
+    brightnessctl     # name gives it away
+    pulseaudio-utils
+    polybar           # nicer statusbar
+    caffeine          # no sleep 
+)
+
+# Update package list
+sudo apt-get update
+
+# Install all packages
+sudo apt-get install -y "${packages[@]}"
 
 sudo snap install neovim --classic
 sudo snap install spotify 
