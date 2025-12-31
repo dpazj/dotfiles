@@ -22,6 +22,7 @@ packages=(
     picom             # enable transparency in i3
     feh               # background picker for i3
     brightnessctl     # name gives it away
+    rofi
     pulseaudio-utils
     polybar           # nicer statusbar
     caffeine          # no sleep 
