@@ -9,6 +9,9 @@ sudo apt-get install -y curl gpg ca-certificates apt-transport-https \
 
 
 packages=(
+    xorg
+    lightdm
+    i3
     snap
     stow
     tmux
@@ -18,7 +21,6 @@ packages=(
     ripgrep
     fd-find
     xclip
-    i3
     picom             # enable transparency in i3
     feh               # background picker for i3
     brightnessctl     # name gives it away
