@@ -48,6 +48,8 @@ gaps outer 2px
 
 include ~/.config/sway/local.conf
 
+exec ~/.config/sway/wallpaper.sh
+
 ### Idle configuration
 #
 # Example configuration:
@@ -221,7 +223,7 @@ bindsym $mod+r mode "resize"
     # Special key to take a screenshot with grim
     bindsym Print exec --no-startup-id flameshot gui
 
-
+    bindsym $mod+Shift+w exec ~/.config/sway/wallpaper.sh
 #
 # Status Bar:
 #

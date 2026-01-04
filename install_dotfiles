@@ -6,6 +6,10 @@ DOTFILE_PROJECTS=(
     "zsh"
     "tmux"
     "nvim"
+##xorg dotfiles
+    #"i3"
+    #"polybar"
+    #"picom"
 )
 
 for project in "${DOTFILE_PROJECTS[@]}"; do
