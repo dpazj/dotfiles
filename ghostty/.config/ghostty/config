@@ -1,4 +1,7 @@
+font-family-bold = Noto Sans Mono
+font-thicken = false
 font-size = 13
+
 maximize = true
 confirm-close-surface = false
 

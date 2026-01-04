@@ -2,6 +2,7 @@
 
 DOTFILE_PROJECTS=(
     "sway"
+    "waybar"
     "ghostty"
     "zsh"
     "tmux"
