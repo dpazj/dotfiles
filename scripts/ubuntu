@@ -10,6 +10,7 @@ sudo apt-get install -y curl gpg ca-certificates apt-transport-https \
 
 packages=(
     sway
+    waybar
     snap
     stow
     tmux
