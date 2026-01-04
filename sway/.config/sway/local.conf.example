@@ -1,0 +1,18 @@
+# rename this to local.conf and the sway configuration will include this
+
+output DP-3 {
+  pos 0 0
+  resolution 2560x1440
+}
+
+output DP-2 {
+  pos -1440 -600
+  resolution 3840x2160
+  transform 270
+  scale 1.5
+}
+
+workspace 1 output DP-3
+workspace 2 output DP-2
+
+

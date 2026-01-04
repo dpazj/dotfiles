@@ -71,17 +71,15 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-
 alias vim='nvim'
 alias zshsource='source ~/.zshrc'
-alias tmuxsource='tmux source ~/.tmux.conf' 
+alias tmuxsource='tmux source ~/.tmux.conf'
 
 export EDITOR=vim
 export GIT_EDITOR=vim
 
-#for i3
 export TERMINAL=ghostty
 
-# Work env setup
-[ -f "$HOME/.config/zsh/work.zsh" ] && source "$HOME/.config/zsh/work.zsh"
+# local env setup
+[ -f "$HOME/.config/zsh/local.zsh" ] && source "$HOME/.config/zsh/local.zsh"
 

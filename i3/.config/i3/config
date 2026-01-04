@@ -38,7 +38,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # for transparency o.O
-exec_always --no-startup-id picom
+# exec_always --no-startup-id picom
 
 # set background
 exec_always --no-startup-id feh --randomize --bg-scale $HOME/Pictures/wallpapers/

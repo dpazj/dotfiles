@@ -1,13 +1,16 @@
 #!/bin/bash
 
 DOTFILE_PROJECTS=(
-    "i3"
-    "polybar"
+    "sway"
+    "waybar"
+    "ghostty"
     "zsh"
     "tmux"
-    "ghostty"
     "nvim"
-    "picom"
+##xorg dotfiles
+    #"i3"
+    #"polybar"
+    #"picom"
 )
 
 for project in "${DOTFILE_PROJECTS[@]}"; do
