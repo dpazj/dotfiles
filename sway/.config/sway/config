@@ -240,5 +240,11 @@ bar {
     }
 }
 
+# startup applications
+for_window [class="Spotify"] move to workspace 10
+exec --no-startup-id spotify
+exec --no-startup-id swaymsg 'workspace 1; exec ghostty -e tmux attach'
+exec --no-startup-id swaymsg 'workspace 1'
+
 include @sysconfdir@/sway/config.d/*
 
