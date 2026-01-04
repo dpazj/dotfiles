@@ -26,10 +26,9 @@
         "on-click": "pavucontrol"
     },
     "battery": {
-        "format": "{icon} {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
-        "format-icons": ["", "", "", "", ""]
+        "format": "BATT {capacity}%",
+        "format-charging": "BATT {capacity}%",
+        "format-plugged": "BATT {capacity}%",
     },
     "clock": {
         "format": "{:%H:%M}",
