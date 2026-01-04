@@ -4,30 +4,32 @@ sudo apt-get update && sudo apt-get install -y
 
 # generic shite
 
-sudo apt-get install -y curl gpg ca-certificates apt-transport-https \ 
+sudo apt-get install -y curl gpg ca-certificates apt-transport-https \
   gcc g++ make cmake wget build-essential autoconf autogen
 
 
 packages=(
-    xorg
-    lightdm
-    i3
+    sway
     snap
     stow
     tmux
     zsh
-    flameshot
     neofetch
     ripgrep
     fd-find
-    xclip
-    picom             # enable transparency in i3
-    feh               # background picker for i3
     brightnessctl     # name gives it away
     rofi
     pulseaudio-utils
-    polybar           # nicer statusbar
-    caffeine          # no sleep 
+    wl-clipboard
+    # xorg
+    # lightdm
+    # i3
+    #xclip
+    #flameshot
+    #picom             # enable transparency in i3
+    #feh               # background picker for i3
+    #polybar           # nicer statusbar
+    #caffeine          # no sleep 
 )
 
 # Update package list
@@ -36,7 +38,7 @@ sudo apt-get update
 # Install all packages
 sudo apt-get install -y "${packages[@]}"
 
-sudo snap install neovim --classic
+sudo snap install nvim --classic
 sudo snap install spotify 
 
 # install ghostty 
