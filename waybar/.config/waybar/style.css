@@ -6,19 +6,18 @@
 
 window#waybar {
     background-color: #1e1e2e;
-    color: #cdd6f4;
+    color: #ededed;
     opacity: 1;
 }
 
 #workspaces button {
     padding: 0 3px;
     background-color: transparent;
-    color: #eceff4;
+    color: #8e8e8e;
 }
 
 #workspaces button.focused {
-    background-color: #5e81ac;
-    color: #eceff4;
+    color: #ededed;
 }
 
 #workspaces button:hover {
