@@ -30,7 +30,6 @@ window#waybar {
 #cpu,
 #memory,
 #network,
-#clock,
 #workspaces,
 #mode {
     background-color: #313244;

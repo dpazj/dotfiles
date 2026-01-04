@@ -30,7 +30,8 @@
         "format-icons": ["", "", "", "", ""]
     },
     "clock": {
-        "format": "{:%Y-%m-%d %H:%M}"
+        "format": "{:%H:%M}",
+        "tooltip-format" : "{:%d/%m/%Y %H:%M}",
     }
 }
 
