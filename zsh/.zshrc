@@ -81,5 +81,5 @@ export GIT_EDITOR=nvim
 export TERMINAL=ghostty
 
 # local env setup
-[ -f "$HOME/.config/zsh/local.zsh" ] && source "$HOME/.config/zsh/local.zsh"
+[ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"
 
