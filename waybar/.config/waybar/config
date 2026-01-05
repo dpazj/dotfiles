@@ -2,8 +2,12 @@
     "layer": "top",
     "modules-left": ["sway/workspaces", "sway/mode"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio","network", "cpu", "memory", "battery"],
-    
+    "modules-right": ["pulseaudio","network", "cpu", "memory", "battery", "tray"],
+    "tray": {
+      "icon-size": 21,
+      "spacing": 10,
+      "show-passive-items": true
+    },
     "cpu": {
         "format": "CPU: {usage}%",
         "interval": 3,
