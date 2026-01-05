@@ -75,8 +75,8 @@ alias vim='nvim'
 alias zshsource='source ~/.zshrc'
 alias tmuxsource='tmux source ~/.tmux.conf'
 
-export EDITOR=vim
-export GIT_EDITOR=vim
+export EDITOR=nvim
+export GIT_EDITOR=nvim
 
 export TERMINAL=ghostty
 
