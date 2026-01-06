@@ -4,7 +4,7 @@
     "modules-center": ["clock"],
     "modules-right": ["pulseaudio","network", "cpu", "memory", "battery", "tray"],
     "tray": {
-      "icon-size": 21,
+      "icon-size": 15,
       "spacing": 10,
       "show-passive-items": true
     },
