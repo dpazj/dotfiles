@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+    echo "Usage: $0 <command> <prompt>"
+    echo "Example: $0 'sudo apt-get install htop' 'install htop'"
+    exit 1
+fi
+
+COMMAND=$1
+TASK="${2:-$COMMAND}"
+
+echo "$TASK? (y/n)"
+read -r RESPONSE
+
+if [[ "$RESPONSE" =~ ^[Yy]$ ]]; then
+    echo "ok doing $TASK:"
+    eval "$COMMAND"
+else
+    echo "hmm ok fine."
+fi
+

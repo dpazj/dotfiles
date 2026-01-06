@@ -1,7 +1,8 @@
 #!/bin/bash 
 
-# install distro specific packages
+INSTALL_RUST=${}
 
+# install distro specific packages
 if grep -Fq "ubuntu" /etc/os-release; then
     echo "Got Ubuntu"
     . ./scripts/ubuntu
@@ -16,6 +17,9 @@ sudo usermod -aG docker $USER
 # for brightnessctl
 echo "Adding current user to video group..."
 sudo usermod -aG video $USER
+
+# Install Rust?
+./scripts/prompt "curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh" "Install Rust"
 
 # install ohmyzsh and plugins
 . ./scripts/ohmyzsh
