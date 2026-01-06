@@ -1,40 +1,4 @@
-* {
-    font-family: "NotoSans", monospace;
-    font-size: 14px;
-    font-weight: bold;
-}
 
-window#waybar {
-    background-color: #1e1e2e;
-    color: #ededed;
-    opacity: 1;
-}
-
-#workspaces button {
-    padding: 0 3px;
-    background-color: transparent;
-    color: #8e8e8e;
-}
-
-#workspaces button.focused {
-    color: #ededed;
-}
-
-#workspaces button:hover {
-    background-color: #4c566a;
-}
-
-#pulseaudio,
-#battery,
-#tray,
-#cpu,
-#memory,
-#network,
-#workspaces,
-#mode {
-    background-color: #313244;
-    padding: 0 10px;
-    margin: 2px;
-    border-radius: 5px;
-}
+@import "style-base.css";
+@import "style-local.css";
 
