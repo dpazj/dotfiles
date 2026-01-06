@@ -28,3 +28,6 @@ workspace 10 output DP-2
 
 focus output DP-3
 
+## Enable disable laptop screen
+# bindswitch --reload --locked lid:on output eDP-1 disable
+# bindswitch --reload --locked lid:off output eDP-1 enable
