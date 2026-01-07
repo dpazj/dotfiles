@@ -250,5 +250,8 @@ exec --no-startup-id spotify --enable-features=UseOzonePlatform --ozone-platform
 exec --no-startup-id swaymsg 'workspace 1; exec ghostty -e tmux attach'
 exec --no-startup-id swaymsg 'workspace 1'
 
+for_window [class="obsidian"] move to workspace 5
+exec --no-startup-id obsidian
+
 include @sysconfdir@/sway/config.d/*
 

@@ -40,7 +40,8 @@ sudo apt-get update
 sudo apt-get install -y "${packages[@]}"
 
 sudo snap install nvim --classic
-sudo snap install spotify 
+sudo snap install spotify
+sudo snap install obsidian --classic
 
 # install ghostty 
 #sudo snap install ghostty --classic
