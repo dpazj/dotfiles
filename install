@@ -1,7 +1,5 @@
 #!/bin/bash 
 
-INSTALL_RUST=${}
-
 # install distro specific packages
 if grep -Fq "ubuntu" /etc/os-release; then
     echo "Got Ubuntu"
