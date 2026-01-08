@@ -1,6 +1,7 @@
 #!/bin/bash
 
 DOTFILE_PROJECTS=(
+    "environment.d"
     "sway"
     "waybar"
     "ghostty"

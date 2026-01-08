@@ -22,6 +22,9 @@ packages=(
     rofi
     pulseaudio-utils
     wl-clipboard
+    grim #screenshot
+    slurp #selected region
+
     # xorg
     # lightdm
     # i3
