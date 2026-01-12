@@ -226,6 +226,7 @@ bindsym $mod+r mode "resize"
 
     bindsym $mod+Shift+w exec ~/.config/sway/wallpaper.sh
 
+    bindsym Mod4+l exec swaylock -f -c 000000
 # Status Bar:
 bar {
     swaybar_command waybar

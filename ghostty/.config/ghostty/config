@@ -10,7 +10,7 @@ window-decoration = none
 window-width=120
 window-height=35
 
-background-opacity = 0.95
+background-opacity = 0.97
 
 cursor-style = block
 cursor-style-blink = false
