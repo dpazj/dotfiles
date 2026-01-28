@@ -80,6 +80,8 @@ export GIT_EDITOR=nvim
 
 export TERMINAL=ghostty
 
+export PATH="$HOME/.local/bin:$PATH"
+
 # local env setup
 [ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"
 
